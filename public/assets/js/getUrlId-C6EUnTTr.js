@@ -1,0 +1,1 @@
+const d=t=>{if(!t)return!1;const c=t.match(/s\/([a-zA-Z0-9_-]+)/),s=t.match(/surl=([a-zA-Z0-9_-]+)/),h=t.match(/\?pwd=([a-zA-Z0-9_-]+)/),n=t.match(/&pwd=([a-zA-Z0-9_-]+)/),o=t.match(/提取码[:：]\s?([a-zA-Z0-9_-]+)/),a=c?c[1]:s?`1${s[1]}`:"",p=h?h[1]:n?n[1]:o?o[1]:"";return{surl:a,pwd:p,url:a===""?"":`https://pan.baidu.com/s/${a}`}};export{d as g};
