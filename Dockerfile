@@ -7,14 +7,14 @@ COPY . /app
 # 删除 vendor 压缩包减小上下文体积
 RUN rm -f vendor.zip
 
-# 仅安装依赖，不生成 .env、不执行安装流程
-RUN composer install --no-scripts --prefer-dist --no-interaction --no-progress
+# 安装依赖
+RUN composer install --optimize-autoloader --no-interaction --no-progress
 
 FROM huankong233/php-nginx:latest
 
 USER root
 
-RUN apk add --no-cache openssl php83-pdo php83-pdo_mysql eudev-libs
+RUN apk add --no-cache openssl php83-pdo php83-pdo_mysql mysql-client eudev-libs
 
 # 补全环境
 RUN apk update && \
