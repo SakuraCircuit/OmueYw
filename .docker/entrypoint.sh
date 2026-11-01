@@ -2,7 +2,7 @@
 
 # 变量
 www_path="/var/www/html"
-latest_path="/var/www/HkList-Libre"
+latest_path="/var/www/HkList"
 
 echo "保留.env文件"
 if [ -f "$www_path/.env" ]; then

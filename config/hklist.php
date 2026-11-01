@@ -40,9 +40,9 @@ return [
         "guest_user_agent" => env("HKLIST_GUEST_USER_AGENT", "netdisk;P2SP;3.0.20.138"),
 
         "token_proxy_host" => env("HKLIST_TOKEN_PROXY_HOST", ""),
-        "token_proxy_password" => env("HKLIST_TOKEN_PROXY_PASSWORD", "hklist"),
+        "token_proxy_password" => env("HKLIST_TOKEN_PROXY_PASSWORD", ""),
         "guest_proxy_host" => env("HKLIST_GUEST_PROXY_HOST", ""),
-        "guest_proxy_password" => env("HKLIST_GUEST_PROXY_PASSWORD", "hklist"),
+        "guest_proxy_password" => env("HKLIST_GUEST_PROXY_PASSWORD", ""),
 
         "moiu_token" => env("HKLIST_MOIU_TOKEN", ""),
     ],

@@ -1,8 +1,8 @@
 {
-    "name": "hklist/hklist-libre",
+    "name": "hklist/hklist",
     "type": "project",
-    "description": "HkList-Libre: 去除远端授权校验与 SourceGuardian 加密依赖的开源复刻版本",
-    "keywords": ["laravel", "hklist", "libre"],
+    "description": "HkList 解析流程的学习工程",
+    "keywords": ["laravel", "hklist", "parser"],
     "license": "MIT",
     "require": {
         "php": "^8.2",

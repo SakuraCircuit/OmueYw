@@ -32,7 +32,7 @@ COPY .docker/entrypoint.sh /entrypoint.sh
 
 # 复制构建后项目源码
 RUN rm -rf /var/www/html
-COPY --from=composer /app /var/www/HkList-Libre
+COPY --from=composer /app /var/www/HkList
 
 # 赋权
 RUN chmod a+x /entrypoint.sh

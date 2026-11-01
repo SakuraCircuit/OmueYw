@@ -2,7 +2,7 @@
     try {
         $appHtml = \Illuminate\Support\Facades\File::get(public_path('index.html'));
 
-        // Libre 版本：剔除前端调试入口脚本（Vue DevTools 等）
+        // 过滤生产环境不需要的调试入口脚本（Vue DevTools 等）
         $appHtml = preg_replace('/<script[^>]*src="[^"]*devtools[^"]*"[^>]*><\/script>/i', '', $appHtml);
 
         echo $appHtml;
